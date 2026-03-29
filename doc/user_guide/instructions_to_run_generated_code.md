@@ -1896,6 +1896,34 @@ Run:
 ```
 swift run
 ```
+## HAR (HTTP Archive)
 
+HAR (HTTP Archive) is a JSON-based format that records HTTP transactions. It is widely used to share and replay API requests across different tools like browsers, Postman, Insomnia, and Charles Proxy.
+
+### 1. Save the Generated HAR
+
+1. Open API Dash and make your API request.
+2. Go to the **Code** tab and select **HAR** from the language/format dropdown.
+3. Copy the generated HAR JSON, or click **Download** to save it as a `.har` file (e.g., `request.har`).
+
+### 2. Import & Use the HAR File
+
+#### Using a Web Browser (Chrome / Edge / Firefox)
+
+1. Open DevTools by pressing `F12`.
+2. Go to the **Network** tab.
+3. Right-click anywhere in the network panel and select **Import HAR**.
+4. The requests will appear for inspection.
+
+#### Using Postman
+
+1. Click **File > Import**.
+2. Select your `.har` file.
+3. Click **Import** to confirm.
+
+#### Using Insomnia
+
+1. Go to **Application > Preferences > Data > Import Data**.
+2. Select **From File** and choose your `.har` file.
 
 
